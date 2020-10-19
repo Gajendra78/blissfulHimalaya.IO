@@ -131,8 +131,12 @@ background-color:var(--button-color-hover);
 /* =====================================================About us =============================== */
  #About-us{
   text-align: center;
+<<<<<<< HEAD
   margin-top: 5rem;
   margin-bottom: 2rem;
+=======
+/*   margin: 5rem; */
+>>>>>>> 979ad143ed5e8d4ee5449e31add93396632cb0af
 }
 #About-us p{
   font-size: 1rem;
@@ -515,6 +519,7 @@ figure:hover img {
   }
   
 }
+<<<<<<< HEAD
 /* =====================================================footer=============================== */
 .bg-success{
   padding-top: 1.5rem;
@@ -591,3 +596,5 @@ figure:hover img {
 #footer{
  padding-bottom: 1rem;
 }
+=======
+>>>>>>> 979ad143ed5e8d4ee5449e31add93396632cb0af
