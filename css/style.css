@@ -1,7 +1,7 @@
  * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Mulish', sans-serif;
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -21,7 +21,37 @@ html{
 }
 .navbar{
   justify-content: space-between;
-} 
+  background-color: var(--button-color) ;
+  font-size: 1.2rem;
+}
+.nav-item::after{
+  content:'';
+  display:block;
+  width:0px;
+  height:2px;
+  background:#9df9ef;
+  transition: 0.2s;
+}
+.nav-item:hover::after{
+  width:100%;
+}
+
+.nav-link{
+  padding:15px 5px;
+  transition:0.2s;
+}
+.dropdown-item.active,
+ .dropdown-item:active{
+  color:#ffffff;
+}
+.dropdown-item:focus, 
+.dropdown-item:hover{
+  background:#9df9ef;
+}
+.navbar-nav{
+color: #fff !important;
+
+}
 /* ======================================================carousel====================================================== */
  #carousel .carousel-item.river {
     background-image: url("../images/5.jpg");
@@ -98,17 +128,90 @@ background-color:var(--button-color-hover);
   background-color: var(--button-color);
   border-color: var(--button-color-hover);
 } 
-/* ============================About us =============================== */
+/* =====================================================About us =============================== */
  #About-us{
   text-align: center;
-  margin: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 #About-us p{
   font-size: 1rem;
   text-align: justify;
-  margin: 1rem 0 5rem 0;
+  margin-top: 1rem;
   text-overflow: inherit; 
 }
+/* ===================================================Serch box============================= */
+.search-box{
+  text-align: center;
+}
+ .search-box input {
+	outline: none;
+}
+.search-box input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+.search-box input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 50rem;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+.search-box input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+.search-box input:-moz-placeholder {
+	color: #999;
+}
+.search-box input::-webkit-input-placeholder {
+	color: #999;
+} 
+ #srch input[type=search] {
+	width: 5rem;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#srch input[type=search]:hover {
+	background-color: #fff;
+}
+#srch input[type=search]:focus {
+	width: 30rem;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#srch input:-moz-placeholder {
+	color: transparent;
+}
+#srch input::-webkit-input-placeholder {
+	color: transparent;
+} 
 /* ====================================================Services============================================================= */
 .service{
   width: 100%;
@@ -178,85 +281,8 @@ background: var(--light-grey-color);
   cursor: pointer;
 }
 
-/* ============================================================== */
-
- /* ===============================================================footer============================================= */
- .bg-primary{
-  padding-top: 1.5rem;
-}
-#footer h5{
- padding-left: 10px;
-   border-left: 3px solid #eeeeee;
-   padding-bottom: 6px;
-   margin-bottom: 20px;
-   color:#ffffff;
-}
-#footer a {
-   color: #ffffff;
-   text-decoration: none !important;
-   background-color: transparent;
-   -webkit-text-decoration-skip: objects;
-}
-#footer ul li {
-   color: #ffffff;
-   text-decoration: none !important;
-   background-color: transparent;
-   -webkit-text-decoration-skip: objects;
-}
-#footer ul.social li{
- padding: 3px 0;
-}
-#footer ul.social li a i {
-   margin-right: 5px;
- font-size:25px;
- -webkit-transition: .5s all ease;
- -moz-transition: .5s all ease;
- transition: .5s all ease;
-}
-#footer ul.social li:hover a i {
- font-size:30px;
- margin-top:-10px;
-}
-#footer ul.social li,
-#footer ul.quick-links li {
- color:#ffffff;
-}
-#footer ul.social li:hover{
- color:#eeeeee;
-}
-#footer ul.quick-links li{
- padding: 3px 0;
- -webkit-transition: .5s all ease;
- -moz-transition: .5s all ease;
- transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
- padding: 3px 0;
- margin-left:5px;
- font-weight:700;
-}
-#footer ul.quick-links li i{
- margin-right: 6px;
-}
-
-#footer ul.quick-links li:hover i{
-   font-weight: 700;
-}
-.h6 a:hover{
- font-weight: 700;
-}
-@media (max-width:767px){
- #footer h5 {
-   padding-left: 0;
-   border-left: transparent;
-   padding-bottom: 0px;
-   margin-bottom: 10px;
-}
-}
-#footer{
- padding-bottom: 1rem;
-} 
-/* ==================================== */
+ 
+/* ====================================Gallery  ============================== */
 
 .thumb {
 	margin-bottom: .8rem;
@@ -264,7 +290,6 @@ background: var(--light-grey-color);
 .thumb:last-child {
 	margin-bottom: 0;
 }
-/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
 .thumb 
 figure img {
   -webkit-filter: grayscale(100%);
@@ -278,11 +303,11 @@ figure:hover img {
   filter: grayscale(0);
 }
 
-/* ========================================= */
+/* =========================================Trek package============================= */
 .wrapper{
   padding: 30px 15px;
 }
-.row{
+.wrapper .row{
   max-width: 1024px;
   margin: 0px auto;
 }
@@ -383,7 +408,6 @@ figure:hover img {
   border-radius: 2px;
   margin: 12px auto;
 }
-
 
 /*horizontal border elements (top & bottom)*/
 .fancy-card .v-border{
@@ -490,4 +514,80 @@ figure:hover img {
     margin: 0% 1.66% 3.33% 1.66%;
   }
   
+}
+/* =====================================================footer=============================== */
+.bg-success{
+  padding-top: 1.5rem;
+}
+#footer h5{
+ padding-left: 10px;
+   border-left: 3px solid #eeeeee;
+   padding-bottom: 6px;
+   margin-bottom: 20px;
+   color:#ffffff;
+}
+#footer a {
+   color: #ffffff;
+   text-decoration: none !important;
+   background-color: transparent;
+   -webkit-text-decoration-skip: objects;
+}
+#footer ul li {
+   color: #ffffff;
+   text-decoration: none !important;
+   background-color: transparent;
+   -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+ padding: 3px 0;
+}
+#footer ul.social li a i {
+   margin-right: 5px;
+ font-size:25px;
+ -webkit-transition: .5s all ease;
+ -moz-transition: .5s all ease;
+ transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+ font-size:30px;
+ margin-top:-10px;
+}
+#footer ul.social li,
+#footer ul.quick-links li {
+ color:#ffffff;
+}
+#footer ul.social li:hover{
+ color:#eeeeee;
+}
+#footer ul.quick-links li{
+ padding: 3px 0;
+ -webkit-transition: .5s all ease;
+ -moz-transition: .5s all ease;
+ transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+ padding: 3px 0;
+ margin-left:5px;
+ font-weight:700;
+}
+#footer ul.quick-links li i{
+ margin-right: 6px;
+}
+
+#footer ul.quick-links li:hover i{
+   font-weight: 700;
+}
+.h6 a:hover{
+ font-weight: 700;
+}
+@media (max-width:767px){
+ #footer h5 {
+   padding-left: 0;
+   border-left: transparent;
+   padding-bottom: 0px;
+   margin-bottom: 10px;
+}
+}
+#footer{
+ padding-bottom: 1rem;
 }
