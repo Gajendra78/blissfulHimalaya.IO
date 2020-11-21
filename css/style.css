@@ -394,7 +394,7 @@ background: var(--light-grey-color);
   background: #57cc99;
   cursor: pointer;
 }
-/* ============================ Gallary ================================== */
+/* ============================================================ Gallary ================================== */
 .gallery{
   /* background: linear-gradient(to bottom, #99ff99 0%, #6699ff 100%); */
  margin-top: -1rem;
@@ -406,6 +406,11 @@ background: var(--light-grey-color);
 }
 #Contact h1{
   padding: 2rem;
+}
+.img-fluid{
+  height: 12rem;
+  width: 100%;
+
 }
  /* ===============================================================footer============================================= */
 
@@ -483,7 +488,10 @@ background: var(--light-grey-color);
  padding-top: 1.5rem;
 } 
 /* ==================================== */
-
+.things-slider{
+  height: 20rem;
+  width: 100%;
+}
 
 /* ========================================= */
 .wrapper{
