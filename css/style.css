@@ -551,6 +551,9 @@ background: var(--light-grey-color);
 .fancy-card.three{
    background-image: url("../images/image/1.jpg");
 }
+.fancy-card.four{
+  background-image: url("../images/image/mallikarjun-temple-askot_1470306345.jpeg");
+}
 
 .fancy-card .bg-overlay{
     background: rgba(0,0,0,0.25);
