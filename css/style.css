@@ -52,6 +52,9 @@ html{
 #carousel .carousel-item.rivervalley {
   background-image: url("../images/image/trek.jpg");
 }
+#carousel .carousel-item.rivervalle {
+  background-image: url("../images/image/new.png");
+}
 
 #carousel .carousel-item {
   height: 90vh;
@@ -556,6 +559,12 @@ background: var(--light-grey-color);
 }
 .fancy-card.five{
   background-image: url("../images/image/narayan-ashram.jpg");
+}
+.fancy-card.six{
+  background-image: url("../images/image/askot-sanctuary.jpg");
+}
+.fancy-card.seven{
+  background-image: url("../images/image/om-parvat.jpg");
 }
 
 .fancy-card .bg-overlay{
